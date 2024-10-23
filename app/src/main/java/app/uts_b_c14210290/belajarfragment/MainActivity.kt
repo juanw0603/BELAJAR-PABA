@@ -16,5 +16,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        val mFragmentManager = supportFragmentManager
+        val mf1 = BlankFragment1()
+
+        mFragmentManager.findFragmentByTag(BlankFragment1::class.java.simpleName)
+        mFragmentManager
+            .beginTransaction()
+            .add(R.id.FrameContainer, mf1,BlankFragment1::class.java.simpleName)
+        .commit()
     }
 }

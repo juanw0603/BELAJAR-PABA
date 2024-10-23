@@ -33,7 +33,7 @@ class BlankFragment1 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val _buttonKeF1 = view.findViewById<Button>(R.id.id_ButtonTO_fragment_f1)
+        val _buttonKeF1 = view.findViewById<Button>(R.id.id_ButtonTO_fragment_f2)
 
         _buttonKeF1.setOnClickListener {
             val managerFragment = parentFragmentManager
